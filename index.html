@@ -7,32 +7,38 @@
 <body>
     <main class="fluid-container">
         <div id="patron-survey" class="well">
-            <h1 id="title">York College Perfoming Arts Patron Survey</h1>
-            <p id="description">Help us make our fine arts better</p>
+            <header class="row">
+                <img class="" id="logo" src="assets/york-logo.jpeg">
+                <div id="title-and-description" class="">
+                    <h1 id="title" class="">Perfoming Arts Patron Survey</h1>
+                    <p id="description" class="">Help us make our fine arts better</p>
+                </div>
+            </header>
             <form id="survey-form">
                 <span class="label-and-input">
                     <label id="name-label" for="name">Name: </label>
-                    <input id="name" type="text" placeholder="Enter your name" required>
+                    <input id="name" type="text" placeholder="Enter your name" class="text-entry" required>
                 </span>
                 <span class="label-and-input">
                     <label id="email-label" for="email">Email: </label>
-                    <input id="email" type="email" placeholder="Enter your email address" required>
+                    <input id="email" type="email" placeholder="Enter your email address" class="text-entry" required>
                 </span>
                 <span class="label-and-input">
-                    <label id="number-label" for="number">How many shows do you attend per year: </label>
+                    <label id="number-label" class="whole-line" for="number">How many shows do you attend per year: </label>
                     <input id="number" type="number" placeholder="Approx shows per year" min="0" max="10" required>
                 </span>
                 <span class="label-and-input">
-                    <label id="dropdown-label" for="dropdown">Affiliation with York College</label>
+                    <label id="dropdown-label" for="dropdown" class="whole-line">Affiliation with York College</label>
                     <select id="dropdown">
+                        <option value="N/A">Not affiliated</option>
                         <option value="Student">Student</option>
                         <option value="Parent">Parent of Student</option>
                         <option value="Faculty">Faculty</option>
                         <option value="Staff">Educational Staff</option>
                         <option value="Alumni">Alumni</option>
-                        <option value="N/A">Not affiliated</option>
                     </select>
                 </span>
+                <hr>
                 <div class="container col-xs-12">
                     <div class="left-column">
                         <fieldset id="education-level" class="">
@@ -59,9 +65,10 @@
                         </fieldset>
                     </div>
                 </div>
-                <label id="comments-label" class="whole-line" for="comments">Comments and Suggestions:</label>
-                <textarea id="comments" class="whole-line">Enter any other comments or suggestions here</textarea>
-                <button id="submit" type="submit">Submit</button>
+                <hr>
+                <label id="comments-label" class="whole-line center" for="comments">Comments and Suggestions:</label>
+                <textarea id="comments" class="">Enter any other comments or suggestions here</textarea>
+                <button id="submit" class="btn whole-line center" type="submit">Submit</button>
             </form>
         </div>
     </main>

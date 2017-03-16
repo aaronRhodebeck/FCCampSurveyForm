@@ -11,12 +11,47 @@
     }
 }
 
+label {
+    padding-top: 5px;
+}
+
+input {
+    vertical-align: text-bottom;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: 90%;
+    border-color: lightslategray;
+}
+
+.text-entry {
+    width: 60%;
+}
+
 .label-and-input {
     display: block;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .whole-line {
     display: block;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.inline {
+    display: inline;
+}
+
+#logo {
+    max-width: 100px;
+    float: left;
+    margin: 15 25 10 20;
 }
 
 #patron-survey {
@@ -24,4 +59,20 @@
     margin-bottom: 5vh;
     margin-right: 5vw;
     margin-left: 5vw;
+}
+
+#comments {
+    width: 85%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+#number {
+    width: 200px;
+}
+
+#title-and-description {
+    float: center;
+    padding: 10px;
 }
