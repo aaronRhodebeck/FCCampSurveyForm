@@ -1,9 +1,27 @@
-.left-column {
-    float: left;
-    width: 45%
+@media (min-width: 900px) {
+    .left-column {
+        float: left;
+        width: 45%;
+        margin-left: 1%;
+    }
+    .right-column {
+        float: right;
+        width: 45%;
+        margin-right: 3%;
+    }
 }
 
-.right-column {
-    float: right;
-    width: 45%;
+.label-and-input {
+    display: block;
+}
+
+.whole-line {
+    display: block;
+}
+
+#patron-survey {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }

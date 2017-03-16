@@ -6,27 +6,35 @@
 
 <body>
     <main class="fluid-container">
-        <div class="well col-sm-10 col-sm-offset-1">
+        <div id="patron-survey" class="well">
             <h1 id="title">York College Perfoming Arts Patron Survey</h1>
             <p id="description">Help us make our fine arts better</p>
             <form id="survey-form">
-                <label id="name-label" for="name">Name: </label>
-                <input id="name" type="text" placeholder="Enter your name" required>
-                <label id="email-label" for="email">Email: </label>
-                <input id="email" type="email" placeholder="Enter your email address" required>
-                <label id="number-label" for="number">How many shows do you attend per year: </label>
-                <input id="number" type="number" placeholder="Approx shows per year" min="0" max="10" required>
-                <label id="dropdown-label" for="dropdown">Affiliation with York College</label>
-                <select id="dropdown">
-                <option value="Student">Student</option>
-                <option value="Parent">Parent of Student</option>
-                <option value="Faculty">Faculty</option>
-                <option value="Staff">Educational Staff</option>
-                <option value="Alumni">Alumni</option>
-                <option value="N/A">Not affiliated</option>
-            </select>
-                <div class="container">
-                    <div class="container left-column">
+                <span class="label-and-input">
+                    <label id="name-label" for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </span>
+                <span class="label-and-input">
+                    <label id="email-label" for="email">Email: </label>
+                    <input id="email" type="email" placeholder="Enter your email address" required>
+                </span>
+                <span class="label-and-input">
+                    <label id="number-label" for="number">How many shows do you attend per year: </label>
+                    <input id="number" type="number" placeholder="Approx shows per year" min="0" max="10" required>
+                </span>
+                <span class="label-and-input">
+                    <label id="dropdown-label" for="dropdown">Affiliation with York College</label>
+                    <select id="dropdown">
+                        <option value="Student">Student</option>
+                        <option value="Parent">Parent of Student</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Staff">Educational Staff</option>
+                        <option value="Alumni">Alumni</option>
+                        <option value="N/A">Not affiliated</option>
+                    </select>
+                </span>
+                <div class="container col-xs-12">
+                    <div class="left-column">
                         <fieldset id="education-level" class="">
                             <legend>What is your highest education level?</legend>
                             <input id="high-school-student" type="radio" name="education-level" value="high-school-student"> High School Student <br />
@@ -37,7 +45,7 @@
                             <input id="graduate-degree" type="radio" name="education-level" value="graduate-degree"> Graduate Degree <br />
                         </fieldset>
                     </div>
-                    <div class="container right-column">
+                    <div class="right-column">
                         <fieldset id="show-types">
                             <legend>What type of shows have you attended at York College?</legend>
                             <input id="choir" type="checkbox" name="show-types" value="choir"> Concert Choir <br />
@@ -51,8 +59,8 @@
                         </fieldset>
                     </div>
                 </div>
-                <label id="comments-label" for="comments">Comments and Suggestions</label>
-                <textarea id="comments">Enter any other comments or suggestions here</textarea>
+                <label id="comments-label" class="whole-line" for="comments">Comments and Suggestions</label>
+                <textarea id="comments" class="whole-line">Enter any other comments or suggestions here</textarea>
                 <button id="submit" type="submit">Submit</button>
             </form>
         </div>
