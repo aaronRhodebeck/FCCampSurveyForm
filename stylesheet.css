@@ -1,38 +1,85 @@
 @media (min-width: 900px) {
     .left-column {
         float: left;
-        width: 45%;
+        max-width: 45%;
         margin-left: 1%;
     }
     .right-column {
         float: right;
-        width: 45%;
+        max-width: 45%;
         margin-right: 3%;
     }
 }
 
+body {
+    background-color: hsl(227, 45%, 50%);
+    font-family: Arial, serif;
+    color: hsl(227, 10%, 20%);
+    font-size: 1.6em;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+p {
+    font-family: Arial, serif;
+    font-size: 1.4em;
+}
+
 label {
     padding-top: 5px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+legend {
+    border-color: hsl(227, 10%, 85%);
 }
 
 input {
     vertical-align: text-bottom;
-    margin-bottom: 5px;
+    font-size: 1.2em;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+    vertical-align: center;
 }
 
 hr {
     width: 90%;
-    border-color: lightslategray;
+    border-color: hsl(227, 10%, 85%);
+}
+
+#comments {
+    font-family: arial, serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    height: 20vh;
 }
 
 .text-entry {
     width: 60%;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-color: hsl(227, 10%, 80%);
+    border-radius: 3px;
+    ;
 }
 
 .label-and-input {
     display: block;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .whole-line {
@@ -66,13 +113,48 @@ hr {
     display: block;
     margin: auto;
     padding: 5px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
 }
 
 #number {
-    width: 200px;
+    width: 40%;
+    border-top: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: hsl(227, 10%, 80%);
+    border-radius: 3px;
+}
+
+#dropdown {
+    width: 40%;
+    font-family: Arial, serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    border-top: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: hsl(227, 10%, 80%);
+    border-radius: 3px;
 }
 
 #title-and-description {
-    float: center;
+    float: left;
     padding: 10px;
+    margin-left: 20px;
+}
+
+#description {
+    padding-left: 20px;
+}
+
+#show-types,
+#education-level {
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 10vw;
+    min-width: 100px;
 }
